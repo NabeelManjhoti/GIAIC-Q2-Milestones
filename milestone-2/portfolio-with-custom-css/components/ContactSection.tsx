@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 const raleway = Raleway({
   subsets: ["latin"],
-});
+})
 
 const ContactSection = () => {
   return (
@@ -58,9 +58,7 @@ const ContactSection = () => {
         </div>
 
         <div className="w-[333px] md:w-[700px] md:h-[392px] bg-[#F8FBFB] md:mt-5 rounded-2xl flex flex-col items-center justify-center gap-5">
-          <div
-            className={`${poppins.className} w-[280px] md:w-[599px] md:h-[88px]`}
-          >
+          <div className={`${poppins.className} w-[280px] md:w-[599px] md:h-[88px]`}>
             <p className="font-normal text-[16px]">
               I am always open to discussing{" "}
               <span className="font-bold">
@@ -71,35 +69,21 @@ const ContactSection = () => {
           </div>
 
           <div className="name w-[280px] md:w-[579px] md:h-[39px] flex flex-col gap-3">
-            <p
-              className={`${poppins.className} text-[16px] font-semibold text-customBlack`}
-            >
-              Name:
-            </p>
+            <p className={`${poppins.className} text-[16px] font-semibold text-customBlack`}>Name:</p>
             <div className="line w-[280px] md:w-[579px] h-[1px] bg-[#B5B5B5]"></div>
           </div>
 
           <div className="email w-[280px] md:w-[579px] md:h-[39px] flex flex-col gap-3">
-            <p
-              className={`${poppins.className} text-[16px] font-semibold text-customBlack`}
-            >
-              Email:
-            </p>
+            <p className={`${poppins.className} text-[16px] font-semibold text-customBlack`}>Email:</p>
             <div className="line w-[280px] md:w-[579px] h-[1px] bg-[#B5B5B5]"></div>
           </div>
 
           <div className="message w-[280px] md:w-[579px] md:h-[39px] flex flex-col gap-3">
-            <p
-              className={`${poppins.className} text-[16px] font-semibold text-customBlack`}
-            >
-              Message:
-            </p>
+            <p className={`${poppins.className} text-[16px] font-semibold text-customBlack`}>Message:</p>
             <div className="line w-[280px] md:w-[579px] h-[1px] bg-[#B5B5B5]"></div>
           </div>
 
-          <button
-            className={`w-[80px] md:w-[101px] h-[30px] md:h-[40px] border-2 border-linear rounded-full ${raleway.className} md:text-[12px] text-[8px] font-semibold text-customBlack mr-[200px] md:mr-[480px] mt-0 md:mt-3`}
-          >
+          <button className={`w-[80px] md:w-[101px] h-[30px] md:h-[40px] border-2 border-linear rounded-full ${raleway.className} md:text-[12px] text-[8px] font-semibold text-customBlack mr-[200px] md:mr-[480px] mt-0 md:mt-3`}>
             Submit
           </button>
         </div>

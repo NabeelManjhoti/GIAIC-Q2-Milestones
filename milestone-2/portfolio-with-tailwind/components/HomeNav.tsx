@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Raleway } from "next/font/google";
 import { AiOutlineHome } from "react-icons/ai";
-import { MdDescription } from 'react-icons/md';
+import { MdDescription } from "react-icons/md";
 import { TbBriefcase2 } from "react-icons/tb";
 import { RiContactsBook3Fill } from "react-icons/ri";
 

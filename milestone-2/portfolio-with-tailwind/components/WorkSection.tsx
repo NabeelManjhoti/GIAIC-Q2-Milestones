@@ -1,12 +1,14 @@
-import React from 'react'
-import { Poppins } from 'next/font/google'
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+
+import React from "react";
+import { Poppins } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: "500"
-})
+  subsets: ["latin"],
+  weight: "500",
+});
 
 const WorkSection = () => {
   return (
@@ -21,30 +23,55 @@ const WorkSection = () => {
           <div className="line w-[132px] md:w-[252px] h-[2px] bg-linear"></div>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-36'>
-          <div className='w-[260px] h-[300px] md:w-[280px] bg-[#FFEED9] rounded-xl flex flex-col items-center justify-start pt-1'>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-36">
+          <div className="w-[260px] h-[300px] md:w-[280px] bg-[#FFEED9] rounded-xl flex flex-col items-center justify-start pt-1">
             <Image
-              className='mt-1 rounded-xl'
+              className="mt-1 rounded-xl"
               src={"/portfolio-1.jpg"}
               width={250}
               height={0}
-              alt='portfolio'
+              alt="portfolio"
             />
-            <Link target='blank' href={"https://milestone-5-pink-eight.vercel.app/"}>
-              <button className={`${poppins.className} text-customWhite font-normal ml-40 mt-2 w-[80px] h-[25px] rounded-lg bg-linear text-[12px]`}>
+            <Link
+              target="blank"
+              href={"https://milestone-5-pink-eight.vercel.app/"}
+            >
+              <button
+                className={`${poppins.className} text-customWhite font-normal ml-40 mt-2 w-[80px] h-[25px] rounded-lg bg-linear text-[12px]`}
+              >
                 Live Project
               </button>
             </Link>
           </div>
-          <div className='w-[260px] h-[300px] md:w-[280px] bg-[#FFEED9] rounded-xl flex flex-col items-center justify-center pt-1'>
-            <p className={`${poppins.className} text-lg md:text-xl font-bold`}>Many Exiting Projects <br /> Coming Soon...</p>
+
+          <div className="w-[260px] h-[300px] md:w-[280px] bg-[#FFEED9] rounded-xl flex flex-col items-center justify-center pt-1">
+            <Image
+              className="mt-1 rounded-xl"
+              src={"/portfolio-2.png"}
+              width={500}
+              height={0}
+              alt="portfolio"
+            />
+            <Link target="blank" href={"https://furniro-by-nabeel.vercel.app/"}>
+              <button
+                className={`${poppins.className} text-customWhite font-normal ml-40 mt-16 w-[80px] h-[25px] rounded-lg bg-linear text-[12px]`}
+              >
+                Live Project
+              </button>
+            </Link>
           </div>
+
+          {/* <div className="w-[260px] h-[300px] md:w-[280px] bg-[#FFEED9] rounded-xl flex flex-col items-center justify-center pt-1">
+            <p className={`${poppins.className} text-lg md:text-xl font-bold`}>
+              Many Exiting Projects <br /> Coming Soon...
+            </p>
+          </div> */}
           {/* <div className='w-[300px] h-[300px] bg-[#FFE3BF]'></div>
           <div className='w-[300px] h-[300px] bg-[#FFE3BF]'></div> */}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WorkSection
+export default WorkSection;

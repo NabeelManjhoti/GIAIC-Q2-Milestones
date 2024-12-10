@@ -1,6 +1,6 @@
-import ContactNav from '@/components/ContactNav'
-import ContactSection from '@/components/ContactSection'
-import React from 'react'
+import ContactNav from "@/components/ContactNav";
+import ContactSection from "@/components/ContactSection";
+import React from "react";
 
 const Contact = () => {
   return (
@@ -8,7 +8,7 @@ const Contact = () => {
       <ContactNav />
       <ContactSection />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

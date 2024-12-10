@@ -1,6 +1,6 @@
-import WorkNav from '@/components/WorkNav'
-import WorkSection from '@/components/WorkSection'
-import React from 'react'
+import WorkNav from "@/components/WorkNav";
+import WorkSection from "@/components/WorkSection";
+import React from "react";
 
 const Work = () => {
   return (
@@ -8,7 +8,7 @@ const Work = () => {
       <WorkNav />
       <WorkSection />
     </div>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
